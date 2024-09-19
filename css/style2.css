@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:20px;
+    right:20px;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 20px 10px;
+    z-index: 1000;
+}
+.logo img{
+    height:auto;
+    max-width: 140px;
+}
+ul{
+    display: flex;
+}
+ul a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    color:black;
+}
+ul a:hover{
+    color:rgb(172, 12, 12);
+}
+ul li{
+    list-style-type: none;;
+    padding-right: 30px;
+}
+.nav-icon{
+    padding-right:40px;
+}
+.nav-icon .btn{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(182, 10, 10);
+    color: aliceblue;
+    border-radius: 20px;
+    border: 1px solid rgb(172, 12, 12);
+    padding: 5px 30px;
+    transition: all;
+}
+.btn:hover{
+    transform: scale(2,2);
+}
+#side-logo{
+    font-size: 24px;
+   display: none;
+}
+.intro img{
+    width:100%;
+}
+section{
+    padding: 60px 12px;
+}
+.home {
+    width:100%;
+    height: 100vh;
+    background-image: url("../images/Copy\ of\ banner-bg.jpg");
+    background-position: center;
+}
+.home-text{
+    display: flex;
+    margin:60px 0px;
+}
+.home-text .left{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.left h4, h1, p{
+    margin-bottom: 30px;
+}
+.left h4{
+    font-size: 20px;
+    color: rgb(172, 12, 12);
+}
+.left h1{
+    font-size: 38px;
+}
+.left h1 span{
+    color:rgb(182, 10, 10);
+    text-decoration: underline;
+}
+.next-bottom .order{
+    border:1px solid rgb(172, 12, 12);
+    background-color: rgb(182, 10, 10);
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 20px;
+}
+.next-bottom i{
+    border:1px solid rgb(172, 12, 12);
+    background-color: rgb(182, 10, 10);
+    color: aliceblue;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all ;
+}
+.next-bottom a{
+    color: rgb(17, 17, 17);
+    text-decoration: none;  
+}
+.next-bottom i:hover{
+   transform: scale(1.2);
+}
+.right img{
+    width:500px;
+    height:500px;
+    margin-right: 40px;
+}
+@media screen  and (max-width:600px){
+    header{
+        width:100%;
+    }
+    ul{
+        display: none;
+    }
+    #side-logo{
+        display: block;
+    }
+}
